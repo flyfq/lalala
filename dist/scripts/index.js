@@ -1,0 +1,1 @@
+"use strict";require(["../scripts/config.js"],function(){require(["common","jquery","swiper"],function(e,o,i){o(".header-right").mousemove(function(){o(".productnotice").show()}),o(".header-right").mouseout(function(){o(".productnotice").hide()})})});
