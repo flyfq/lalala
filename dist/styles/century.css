@@ -115,7 +115,7 @@ html body {
         font: 700 14px/40px "微软雅黑";
         color: #ffffff; }
       html body div#nav div.margin div.nav-left ul {
-        display: block;
+        z-index: 99;
         position: absolute;
         background: rgba(23, 23, 23, 0.7);
         width: 150px;

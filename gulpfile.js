@@ -50,12 +50,12 @@ gulp.task("webserver",["watching"],function(){
       livereload: true,
       directoryListing: true,
       open: true,
-			port:10002
-			// https:true,
-// 			proxies:[{
-// 				source:'/listmore',
-// 				target:'https://m.lagou.com/listmore.json',
-// 			}]
+			port:10002,
+			 // https:true,
+			proxies:[{
+				source:'/abc',
+				target:'http://localhost:10002/abc',
+			}]
     }));
 })
 
