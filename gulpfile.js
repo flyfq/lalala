@@ -51,10 +51,10 @@ gulp.task("webserver",["watching"],function(){
       directoryListing: true,
       open: true,
 			port:10002,
-			 // https:true,
+			// https:true,
 			proxies:[{
-				source:'/abc',
-				target:'http://localhost:10002/abc',
+				source:'/listmore',
+				target:'https://music.163.com/store/api/product/search',
 			}]
     }));
 })

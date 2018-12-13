@@ -1,23 +1,22 @@
 @import "mixins";
 ul.login-nav{display: none;}
 p.login-notic{font-size: 14px;font-family: "微软雅黑"; margin: 72px 0 50px 0;text-align: center;}
-
-.margin{}
-
+.distance{margin-top: 28px;}
+.dis{margin-top: 100px;}
 div#login{
 	// height: ;
 	div.margin{
-		border:1px solid #dddddd;border-top:0;
+		border:1px solid #dddddd;border-top:0;padding-bottom: 60px;
 		div.login-left{
 			float: left;margin:60px 70px 0 80px;
 			}
 		div.login-right{
 			font: 12px/25px "微软雅黑";
-			margin-top: 28px;
+			
 			float: left;
 			div.login-title{
 				width: 334px;
-				margin-left:20px;
+				margin-left:30px;
 				
 				span:nth-child(1){float: left;font: 700 14px/18px "微软雅黑";}
 				span:nth-child(2){
@@ -41,7 +40,7 @@ div#login{
 				a{color: orangered;}
 			}
 			div.special{
-				input{width: 92px;}
+				input.te{width: 92px;}
 				img{width: 88px;height: 27px;margin-left: 10px;}
 				a{font:12px/27px "微软雅黑";}
 			}

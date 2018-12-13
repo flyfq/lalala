@@ -8,19 +8,25 @@ p.login-notic {
   margin: 72px 0 50px 0;
   text-align: center; }
 
+.distance {
+  margin-top: 28px; }
+
+.dis {
+  margin-top: 100px; }
+
 div#login div.margin {
   border: 1px solid #dddddd;
-  border-top: 0; }
+  border-top: 0;
+  padding-bottom: 60px; }
   div#login div.margin div.login-left {
     float: left;
     margin: 60px 70px 0 80px; }
   div#login div.margin div.login-right {
     font: 12px/25px "微软雅黑";
-    margin-top: 28px;
     float: left; }
     div#login div.margin div.login-right div.login-title {
       width: 334px;
-      margin-left: 20px; }
+      margin-left: 30px; }
       div#login div.margin div.login-right div.login-title span:nth-child(1) {
         float: left;
         font: 700 14px/18px "微软雅黑"; }
@@ -52,7 +58,7 @@ div#login div.margin {
         color: #FFFFFF; }
       div#login div.margin div.login-right div.submit a {
         color: orangered; }
-    div#login div.margin div.login-right div.special input {
+    div#login div.margin div.login-right div.special input.te {
       width: 92px; }
     div#login div.margin div.login-right div.special img {
       width: 88px;

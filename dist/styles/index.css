@@ -2,6 +2,9 @@
 html, body {
   width: 100%; }
 
+li.active {
+  border-bottom: 3px solid #e6423b; }
+
 div#banner {
   height: 500px; }
   div#banner div.slider-img a {
@@ -83,21 +86,20 @@ div#main div.main-middle div.title {
 
 div#main div.main-middle ul.hotgoodsnav {
   margin-right: 0;
-  margin: 26px 0 0px 0; }
+  margin: 40px 0 0px 0; }
   div#main div.main-middle ul.hotgoodsnav li {
     float: right;
     border-right: 1px solid #e8e8e8; }
     div#main div.main-middle ul.hotgoodsnav li a {
       display: block;
-      font: 14px/26px "";
+      font: 16px/28px "";
       padding: 0 22px; }
-  div#main div.main-middle ul.hotgoodsnav li:hover {
-    border-bottom: 2px solid #e6423b; }
 
 div#main div.main-middle div.hotgoodslist ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transition: 1s linear all; }
   div#main div.main-middle div.hotgoodslist ul li {
     width: 230px;
     height: 330px;
@@ -108,7 +110,9 @@ div#main div.main-middle div.hotgoodslist ul {
       height: 100%;
       display: block; }
       div#main div.main-middle div.hotgoodslist ul li a img {
-        width: 100%; }
+        width: 80%;
+        display: block;
+        margin: 0 auto; }
       div#main div.main-middle div.hotgoodslist ul li a p.des-item {
         font: 14px/24px "";
         width: 90%;
@@ -131,6 +135,9 @@ div#main div.main-middle div.hotgoodslist ul {
   div#main div.main-middle div.hotgoodslist ul li:hover img {
     transform: scale(1.05, 1.05);
     transition: 1s linear all; }
+
+div#main div.main-middle div.hotgoodslist ul.lifeshow, div#main div.main-middle div.hotgoodslist ul.beautyshow, div#main div.main-middle div.hotgoodslist ul.milkshow, div#main div.main-middle div.hotgoodslist ul.hotshow, div#main div.main-middle div.hotgoodslist ul.momshow {
+  display: none; }
 
 div#main div.main-bottom {
   margin: 66px 0 0 0; }

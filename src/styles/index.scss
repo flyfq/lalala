@@ -1,5 +1,6 @@
 @import "mixins";
 html,body{width: 100%;}
+li.active{border-bottom: 3px solid #e6423b;}
 div#banner{
 	height: 500px;
 	div.slider-img{
@@ -81,22 +82,22 @@ div#main{
 			}
 			ul.hotgoodsnav{
 				margin-right: 0;
-				margin:26px 0 0px 0;
+				margin:40px 0 0px 0;
 				li{
 					float: right;
 					border-right:1px solid #e8e8e8;
-					a{display: block;font:14px/26px "";padding: 0 22px;}
+					a{display: block;font:16px/28px "";padding: 0 22px;}
 					}
-				li:hover{border-bottom: 2px solid #e6423b;}
+				
 			}
 			div.hotgoodslist{
 				ul{
-					display:flex;flex-wrap: wrap;justify-content: space-between;
+					display:flex;flex-wrap: wrap;justify-content: space-between;transition:1s linear all;
 					li{
 						width:230px;height:330px;border: 1px solid #e8e8e8;margin:8px 0;
 						a{
 							width:100%;height: 100%;display: block;
-							img{width: 100%;}
+							img{width: 80%;display: block;margin: 0 auto;}
 							p.des-item{font:14px/24px "";width: 90%;margin: 0 auto;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 							p.price-item{font:700 26px/32px "";color:#e94a3e;text-indent: 10px;margin-bottom: 10px;}
 							span{padding: 1px 5px;border:1px solid #eda562;color: #eda562;font:12px/18px "";border-radius: 3px;margin-left:10px;}
@@ -104,6 +105,7 @@ div#main{
 					}
 					li:hover img{transform: scale(1.05,1.05);transition:1s linear all;}
 				}
+				ul.lifeshow,ul.beautyshow,ul.milkshow,ul.hotshow,ul.momshow{display: none;}
 			}
 		}
 		div.main-bottom{
