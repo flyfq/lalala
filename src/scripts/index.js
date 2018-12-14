@@ -263,6 +263,7 @@ require(["../scripts/config.js"], function(){
 						
 						// var str =""
 						for(var i=0;i<sliderjson.length;i++){
+							
 							var oa = document.createElement("a")
 							var oimg = document.createElement("img")
 									oa.append(oimg)

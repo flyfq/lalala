@@ -1,6 +1,7 @@
 @import "mixins";
 html,body{width: 100%;}
 li.active{border-bottom: 3px solid #e6423b;}
+
 div#banner{
 	height: 500px;
 	div.slider-img{
@@ -122,7 +123,7 @@ div#main{
 					}
 				li:hover{box-shadow: 1px 2px 2px 1px #d8d8d8;transition:.5s linear all;}
 			}
-			p.buy-notice{font-size: 14px;font-family: "微软雅黑"; margin: 72px 0 50px 0;text-align: center;}
+			
 		}
 	 
 }
