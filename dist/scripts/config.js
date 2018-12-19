@@ -1,1 +1,1 @@
-"use strict";requirejs.config({baseUrl:"../scripts/",paths:{jquery:"libs/jquery.min",swiper:"libs/swiper.min",common:"common"}});
+"use strict";requirejs.config({baseUrl:"../scripts/",paths:{jquery:"libs/jquery.min",swiper:"libs/swiper.min",common:"common",public:"public",cookie:"cookie"}});

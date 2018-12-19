@@ -1,8 +1,8 @@
 
 require(["../scripts/config.js"], function(){
-	require(["jquery"], function(jq){
+	require(["jquery","public"], function($,pub){
 		
-	
+	pub();
 		
 	})
 })

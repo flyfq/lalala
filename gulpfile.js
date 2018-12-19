@@ -54,7 +54,7 @@ gulp.task("webserver",["watching"],function(){
 			// https:true,
 			proxies:[{
 				source:'/listmore',
-				target:'https://music.163.com/store/api/product/search',
+				target:'https://category.vip.com/ajax/mapi.php',
 			}]
     }));
 })

@@ -5,6 +5,7 @@ requirejs.config({
 		"jquery" : "libs/jquery.min",
 		"swiper" : "libs/swiper.min",
 		"common" : "common",
-		
+		"public" :"public",
+		"cookie" :"cookie"
 	}
 });
