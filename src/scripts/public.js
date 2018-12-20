@@ -201,7 +201,7 @@ define(["jquery"], function($){
 					
 				for(var i=0;i<goodlist.length;i++){
 					$(".nav-left ul li a")[i].innerHTML = goodlist[i].text
-					$(".nav-left ul li a")[i].href = goodlist[i].href
+					$(".nav-left ul li a")[i].href = "http://localhost:10002/pages/product.html"
 				}	
 		
 				// 导航滑入滑出显示隐藏

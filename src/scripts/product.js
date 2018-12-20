@@ -1,5 +1,5 @@
 require(["../scripts/config.js"],function(){
-	require(["jquery","public","cookie"],function($,pub,cok){
+	require(["jquery","public","cookie","jqcookie"],function($,pub,cok,jqcok){
 		pub()
 	
 	// 商品的加载数据获取
@@ -2264,17 +2264,45 @@ require(["../scripts/config.js"],function(){
 	})
 }	
 
-	// 加入购物车
+	// 加入购物车,创建cookie
 	$(".productmainlist ul").click(function(event){
 		var $target = $(event.target)
 		// console.log($target.prop("nodeName"))
-		
 		if($target.prop("nodeName") == "A"){
 			var id = $target.attr("goodsId")
-			// console.log(id)
-			cok.setCookie(id,id)
+			var goodscookie
+			if($.cookie("_goods")==undefined){
+				goodscookie=[]
+			}else{
+				goodscookie = JSON.parse($.cookie("_goods"))
+			}
+			
+		   if(goodscookie.length<1){
+			   goodscookie.push({
+				   $id:id,
+				   num:1
+			   })
+		   }else{
+			   var onOff = true;
+			   $.each(goodscookie,function(index,value){
+				   if(value.$id == id){
+					   goodscookie[index].num++
+					   onOff=false
+				   }
+			   })
+			   if(onOff){
+				   goodscookie.push({
+				   	$id:id,
+				   	num:1
+				   })
+			   }  
+		   }
+			   $.cookie("_goods",JSON.stringify(goodscookie))
+			  
 		}
 	})
+
+	
 
 	// 更多和收起的鼠标事件效果
 	$(".select a").mousemove(function(){
@@ -2311,7 +2339,10 @@ require(["../scripts/config.js"],function(){
 	})
 	
 	
-	
+	// 点击商品跳转到商品详情页
+	$(".productmainlist ul li").click(function(){
+		window.open("http://localhost:10002/pages/item.html")
+	})
 	
 	
 	})
