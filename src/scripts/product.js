@@ -2340,7 +2340,7 @@ require(["../scripts/config.js"],function(){
 	
 	
 	// 点击商品跳转到商品详情页
-	$(".productmainlist ul li").click(function(){
+	$(".productmainlist ul li img").click(function(){
 		window.open("http://localhost:10002/pages/item.html")
 	})
 	
